@@ -49,8 +49,8 @@ public:
 
         string firstStr = *(strs.begin());
         stringstream ss;
-        //"[a]" "[b]"
-        //첫번째 인덱스 부터 하나씩 비교해서 다르면 넘어가고 같으면 배열에 저장
+
+        //첫번째 인덱스 부터 하나씩 비교해서 다르면 넘어가고 같으면 stringstream에 저장
         //1.모든 str 에 다 해당되는지 부터 찾기
         //2.다 일치하는게 입증되면 그제서야 다음 char를 비교
 
@@ -60,6 +60,7 @@ public:
         }
         if (1 < strsSize)
         {
+            //while, 접두어 찾기 작업, 하나라도 불일치 하면 작업중지
             while (charIndex < strs[strsIndex].length())//기준이 되는 charIndex가 범위를 벗어나지 않는다 
             {
                 if ((*(firstStr.begin() + charIndex) == *(strs[strsIndex].begin() + charIndex)))
@@ -70,32 +71,33 @@ public:
                         strsIndex = 1;
                         continue;
                     }
-                    else
+                    else // 다음 str로 넘어가기
                     {
                         strsIndex++;
                         continue;
                     }
                 }
-                else
+                else //다르면, 접두어 찾기 작업 중지
                 {
                     break;
                 }
 
             }
 
-            if (charIndex > 0)
+            if (charIndex > 0) //찾아놓은게 1글자라도 있다
             {
                 for (int i = 0; i < charIndex; i++)
                 {
-                    ss.put(firstStr[i]);
+                    ss.put(firstStr[i]); //stringstream에 저장
                 }
             }
         }
-        if (strsSize == 1)
+
+        if (strsSize == 1) //str 인자가 하나만 들어왔을 경우
         {
-            return firstStr;
+            return firstStr; //해당 인자 그대로 리턴
         }
-        else
+        else //stringstream에 저장해놓은 접두어 리턴
         {
             return ss.str();
         }
