@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCode_Easy_ValidParenthe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCode_Medium_Design_LinkedList", "LeetCode_Medium_Design_LinkedList\LeetCode_Medium_Design_LinkedList.vcxproj", "{04B27F6D-2F64-42DC-9B6C-2F0F0C821AB4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCode_Medium_ValidateIPAddress", "LeetCode_Medium_ValidateIPAddress\LeetCode_Medium_ValidateIPAddress.vcxproj", "{EEB4115E-A571-4561-88FF-0BDD0CD90F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{04B27F6D-2F64-42DC-9B6C-2F0F0C821AB4}.Release|x64.Build.0 = Release|x64
 		{04B27F6D-2F64-42DC-9B6C-2F0F0C821AB4}.Release|x86.ActiveCfg = Release|Win32
 		{04B27F6D-2F64-42DC-9B6C-2F0F0C821AB4}.Release|x86.Build.0 = Release|Win32
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Debug|x64.ActiveCfg = Debug|x64
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Debug|x64.Build.0 = Debug|x64
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Debug|x86.ActiveCfg = Debug|Win32
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Debug|x86.Build.0 = Debug|Win32
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Release|x64.ActiveCfg = Release|x64
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Release|x64.Build.0 = Release|x64
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Release|x86.ActiveCfg = Release|Win32
+		{EEB4115E-A571-4561-88FF-0BDD0CD90F74}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
